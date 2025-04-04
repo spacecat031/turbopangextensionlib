@@ -1,2 +1,52 @@
-<h1>our server is scratching its head<h1>
-<h2>this service is currently offline please come back later<h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offline - Server Sleeping</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .emoji {
+            font-size: 50px;
+        }
+        .retry-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .retry-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Our servers are taking a nap!</h1>
+      <h3>please retry later<h3>
+        <p><strong>(Error Code: DEFAULT_MAINTANCE_MESSAGE)</strong></p>
+        <button class="retry-button" onclick="location.reload()">Refresh</button>
+    </div>
+</body>
+</html>
